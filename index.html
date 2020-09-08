@@ -7,6 +7,40 @@
 
   </head>
   <body>
+Do Control+Shift+P (or Cmd+Shift+P if on a Mac) and type "Open Shell". Press enter and a shell should open. 
+
+
+~/UnrulyToughDesigners$ dir
+index.html
+~/UnrulyToughDesigners$ git commit
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+    modified:   index.html
+
+no changes added to commit
+~/UnrulyToughDesigners$ git push
+Username for 'https://github.com': andcmill
+Password for 'https://andcmill@github.com': 
+Counting objects: 15, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (15/15), 1.60 KiB | 233.00 KiB/s, done.
+Total 15 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+remote: error: GH007: Your push would publish a private email address.
+remote: You can make your email public or disable this protection by visiting:
+remote: http://github.com/settings/emails
+To https://github.com/andcmill/UnrulyToughDesigners
+ ! [remote rejected] main -> main (push declined due to email privacy restrictions)
+error: failed to push some refs to 'https://github.com/andcmill/UnrulyToughDesigners'
+~/UnrulyToughDesigners$ ^C
+~/UnrulyToughDesigners$  
+
+23344141+andcmill@users.noreply.github.com
+
     stuff
   </body>
 </html>
